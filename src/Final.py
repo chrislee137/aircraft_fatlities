@@ -14,7 +14,6 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split, KFold
 import statsmodels.formula.api as smf
 import statsmodels.api as sm
-%matplotlib inline
 plt.style.use('ggplot')
 from pandas.plotting import scatter_matrix
 import pylab as py
