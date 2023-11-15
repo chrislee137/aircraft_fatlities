@@ -23,7 +23,6 @@ def crashes():
     crashes = pd.read_csv("../data/aircraft_info.csv")
 if __name__ == '__main__':
     crashed= crashes()
-crashes = pd.read_csv(r"C:\Users\chris\anaconda3\cohort_06\daimil10\exams\aircraft_fatlities\data\aircraft_info.csv")
 crashed['Date'] = pd.to_datetime(crashed['Date'], dayfirst=False)
 crashed['Date'] = crashed['Date'].dt.strftime('%Y-%m')
 new_dates= crashed[(crashed['Date'] > '2015-01')]
@@ -50,5 +49,3 @@ ax = f.plot(kind='bar', title ="Flight Survivability", figsize=(10,5),legend=Tru
 ax.set_xlabel("Crash Input ID",fontsize=8)
 ax.set_ylabel("Passagngers",fontsize=8)
 
-if __name__ == '__main__':
-    crashes, newd_dates = read_data()
